@@ -15,7 +15,7 @@ BASE_COMMAND=(
 
 for addr_type in {0..7}; do
   for multiplex in {0..19}; do
-    current_command=("${BASE_COMMAND[@]}" --led-addr-type="${addr_type}" --led-multiplexing="${multiplex}")
+    current_command=("${BASE_COMMAND[@]}" led-row-addr-type="${addr_type}" --led-multiplexing="${multiplex}")
     command_string=$(printf '%q ' "${current_command[@]}")
     command_string=${command_string%% } # trim trailing space
 
