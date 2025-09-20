@@ -13,7 +13,7 @@ BASE_COMMAND=(
   --led-brightness=2
 )
 
-for addr_type in {0..7}; do
+for addr_type in {5..7}; do
   for multiplex in {0..19}; do
     current_command=("${BASE_COMMAND[@]}" led-row-addr-type="${addr_type}" --led-multiplexing="${multiplex}")
     command_string=$(printf '%q ' "${current_command[@]}")
