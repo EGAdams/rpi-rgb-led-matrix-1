@@ -33,7 +33,9 @@ ledcat : ledcat.o
 pixel-mover : pixel-mover.o
 
 # All the binaries that have the same name as the object file.
-$(BINARIES): % : %.o $(RGB_LIBRARY)
+COMMON_BINARIES=$(filter-out demo c-example,$(BINARIES))
+
+$(COMMON_BINARIES): % : %.o $(RGB_LIBRARY)
 	$(CXX) $< -o $@ $(LDFLAGS)
 
 image-example.o : image-example.cc
