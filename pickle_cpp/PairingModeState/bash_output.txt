@@ -1,0 +1,14 @@
+Initializing Tennis Game System...
+constructing scoreboard without matrix...
+canvas is NULL
+Game System Initialized. Starting Remote Listener...
+[07:55:42] [ScoreBoard/ScoreBoard.cpp] [: 544] [setLittleDrawerFont()] loading little number font: fonts/8x13B.bdf
+[07:55:42] [ScoreBoard/ScoreBoard.cpp] [: 548] [setLittleDrawerFont()] little number font loaded
+[07:55:42] [ScoreBoard/ScoreBoard.cpp] [: 549] [setLittleDrawerFont()] set little number font disabled on october massacre. 
+PairingBlinker constructing...
+RemoteListenerContext constructor called
+[StateMachine] Transitioned to state: 1
+[07:55:43] [PairingModeState/PairingModeState.cpp] [: 17] [handleInput()] === [STATE: PairingMode] ===
+[07:55:43] [PairingModeState/PairingModeState.cpp] [: 26] [handleInput()] *** ERROR: pairingBlinker is NULL! ***
+[StateMachine] Transitioned to state: 0
+[07:55:44] [RegularGamePlayAfterScoreState/RegularGamePlayAfterScoreState.cpp] [: 6] [handleInput()] === [STATE: RegularGamePlayAfterScore] ===

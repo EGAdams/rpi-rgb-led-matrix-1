@@ -1,0 +1,65 @@
+# Test UNDO functionality after Match Win
+# This test verifies that set counts are properly restored when UNDO is pressed after a match win
+# /////////////////////// BEGIN TEST //////////////////////
+# /// Start Paring ///
+PAUSE 5
+
+# green pair
+GREEN_REMOTE_GREEN_SCORE
+PAUSE 5
+
+# red pair
+RED_REMOTE_RED_SCORE
+PAUSE 5
+
+# /////////////////////// End Paring //////////////////////
+
+# ----------- GREEN WINS SET 1 -----------
+
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+
+# ----------- RED WINS SET 2 -----------
+
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+
+# ----------- RED WINS SET 3 (MATCH WIN) -----------
+
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+RED_REMOTE_RED_SCORE
+
+# ----------- NOW TEST UNDO AFTER MATCH WIN -----------
+
+PAUSE 10
+# This should restore the set counts to: Green = 1 set, Red = 1 set (before the match-winning point)
+RED_REMOTE_UNDO
+
+# //////////////////////// END TEST ///////////////////////

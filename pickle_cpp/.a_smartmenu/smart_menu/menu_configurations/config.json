@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Open Notepad",
+        "action": "notepad.exe",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "List Directory",
+        "action": "ls",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Show JSON Config",
+        "action": "cat /home/eg1972/linuxBash/python_menus/smart_menu/config.json",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Show vscode installations",
+        "action": "whereis code",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Show Command History",
+        "action": "history",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Show the Plan",
+        "action": "echo 'showing plan...'",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Open auto memgpt workspace",
+        "action": "code /home/eg1972/agent_99/",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "First Submenu",
+        "action": null,
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "chat with autogen memgpt",
+        "action": "python3 app.py",
+        "working_directory": "/home/eg1972/agent_99/autogen/autogen/autogen_memgpt",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Switch to the Agent 99 environment",
+        "action": "source environment_for_agent_99/bin/activate",
+        "working_directory": "/home/eg1972/agent_99",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Open Linux Bash Workspace",
+        "action": "code /home/eg1972/linuxBash",
+        "working_directory": "/home/eg1972/linuxBash",
+        "open_in_subprocess": false
+    }
+]
+

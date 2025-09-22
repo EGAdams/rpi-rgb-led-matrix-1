@@ -1,0 +1,104 @@
+[
+    {
+        "title": "Tennis Game",
+        "action": "cd ~/rpi-rgb-led-matrix/tennis-game; sudo nohup ./run_remote_listener > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "PB - Singles",
+        "action": "cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo nohup ./pickle_cpp_remote --singles > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "PB - Doubles",
+        "action": "cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo nohup ./pickle_cpp_remote --doubles > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Start Game",
+        "action": "cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo nohup ./pickle_cpp_remote > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Kill All Pickleball Processes",
+        "action": "cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo nohup python3 kill_pickle_listeners.py > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Kill All Processes",
+        "action": "python3 ~/rpi-rgb-led-matrix/tennis-game/.a_smartmenu/smart_menu/menu_configurations/kill_tennis_game.py",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Start Round Robin Digi Test",
+        "action": "cd ~/rpi-rgb-led-matrix/tennis-game;  sudo nohup ./blink_round_robin_demo > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Start Pickleball Test",
+        "action": "cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo nohup ./run_pickle_listener > /dev/null 2>&1 &",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Pickleball 21 Test",
+        "action": "cp ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_to_21.txt ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_input.txt;  cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo ./run_pickle_listener",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Pickleball Serve Bar Test",
+        "action": "cp ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/serve_bar_test.txt ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_input.txt;  cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo ./run_pickle_listener",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Brightness",
+        "action": "python3 ~/rpi-rgb-led-matrix/tennis-game/.a_smartmenu/smart_menu/adjust_brightness.py",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Stop Game",
+        "action": "python3 ~/rpi-rgb-led-matrix/tennis-game/.a_smartmenu/smart_menu/menu_configurations/kill_tennis_game.py",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Restart Yonex",
+        "action": "sudo /sbin/shutdown -r now",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Update project",
+        "action": "cd ~/rpi-rgb-led-matrix/tennis-game; python3 ~/rpi-rgb-led-matrix/tennis-game/git_pull.py",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Show JSON Config",
+        "action": "cat ~/rpi-rgb-led-matrix/tennis-game/.a_smartmenu/smart_menu/menu_configurations/diet_pi.json",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Run Red Match Win",
+        "action": "cp ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/red_win_match_green_one_set_win.txt ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_input.txt; cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo ./run_pickle_listener",
+        "working_directory": "",
+        "open_in_subprocess": false
+    },
+    {
+        "title": "Test Pairing",
+        "action": "cp ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_pairing.txt ~/rpi-rgb-led-matrix/pickle_cpp/TestInputWithTimer/test_input.txt; cd ~/rpi-rgb-led-matrix/pickle_cpp; sudo ./run_pickle_listener; echo 'Press <enter> to exit.'; read",
+        "working_directory": "",
+        "open_in_subprocess": false
+    }
+]

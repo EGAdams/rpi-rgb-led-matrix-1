@@ -1,0 +1,17 @@
+# Begin test file
+# Green Win Test
+# /////////////////////// BEGIN TEST //////////////////////
+# /// Start Paring ///
+# green pair
+GREEN_REMOTE_GREEN_SCORE
+# red pair
+RED_REMOTE_RED_SCORE
+# /// End Paring ///
+
+GREEN_REMOTE_GREEN_SCORE
+RED_REMOTE_RED_SCORE
+GREEN_REMOTE_GREEN_SCORE
+GREEN_REMOTE_GREEN_SCORE
+RED_REMOTE_RED_SCORE
+GREEN_REMOTE_GREEN_SCORE
+# //////////////////////// END TEST ///////////////////////

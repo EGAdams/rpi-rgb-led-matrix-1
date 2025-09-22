@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 6%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  td {
+    font-size: 14px;
+  }
+  /* Remove or comment out this rule */
+  /* th {
+    background-color: #f2f2f2;
+  } */
+  .table-header th {
+    background-color: #f2f2f2c5;
+  }
+  .addresses {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .total {
+    text-align: right;
+  }
+  .total strong {
+    font-size: 18px;
+  }
+  ul {
+    list-style-type: disc;
+    color:black;
+  }
+  ul li:before {
+    /*content: '\2013'; */
+    position: absolute;
+    margin-left: -15px;
+  }
+  ul li:first-child {
+    list-style-type: none;
+  }
+  .datestring {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .commit-description {
+    font-size: 12px;
+  }
+  

@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Observer",
+                "${workspaceFolder}/Subject",
+                "${workspaceFolder}/BlinkController",
+                "${workspaceFolder}/PinInterface",
+                "${workspaceFolder}/History",
+                "${workspaceFolder}/Arduino",
+                "${workspaceFolder}/GameTimer",
+                "${workspaceFolder}/LedBlinker",
+                "${workspaceFolder}/Command",
+                "${workspaceFolder}/ScoreCommand",
+                "${workspaceFolder}/DIGI_V6_15",
+                "${workspaceFolder}/ShowMatchWin"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

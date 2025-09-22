@@ -1,0 +1,23 @@
+# Begin test file
+# Test Pairing Only
+# /////////////////////// BEGIN TEST //////////////////////
+# /// Start Paring ///
+# pause 5 seconds to show pairing screen
+PAUSE 5
+# green pair
+RED_REMOTE_RED_SCORE
+
+# pause 5 seconds to show pairing screen
+PAUSE 5
+
+# red pair
+RED_REMOTE_RED_SCORE
+
+# pause 5 to show paired.
+PAUSE 5
+# /// End Paring ///
+
+# Show Player starting screen for 5 seconds
+PAUSE 5
+
+# //////////////////////// END TEST ///////////////////////
